@@ -4,8 +4,8 @@
 %% Alumno (Apellidos, Nombre):    Jareda Herrera, ALejandro         %%
 %%==================================================================%%
 
- Paso   Acción                       Notas
-====== ============================ ================================
+ Paso   Acción                      	 	Notas
+====== ============================ 		================================
 1	git clone URL
 2	notepad bitacora.txt		
 3	git add bitacora.txt
@@ -17,3 +17,6 @@
 6	git branch develop
 7	git checkout -b feature/Ticket220
 
+13	git checkout feature/Ticket220		Salta error, ya que hay cambios sin guardar y queremos saltar
+						a otra rama. Como solución, creo un stash (git stash), y a 
+						continuación reintento el git checkout.
