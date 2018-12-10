@@ -52,4 +52,10 @@
 31	git checkout feature/Ticket222
 32	git merge develop
 
+34	git add bitacora.txt
+34	git commit -m "Paso 34"
+35	git merge --no-ff feature/Ticket222
+36	git merge --no-ff develop
+
+
 
