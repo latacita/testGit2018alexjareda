@@ -6,4 +6,9 @@
 
  Paso   Acción                       Notas
 ====== ============================ ================================
+1	git clone URL
+2	notepad bitacora.txt		
+3	git add bitacora.txt
+3	git commit -m "Paso 3"
+3	git push
 
