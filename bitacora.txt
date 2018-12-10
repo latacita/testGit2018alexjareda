@@ -1,14 +1,55 @@
 ﻿%%==================================================================%%
 %%                 Métodos de Desarrollo - Test de Git              %%
 %%==================================================================%%
-%% Alumno (Apellidos, Nombre):    Jareda Herrera, ALejandro         %%
+%% Alumno (Apellidos, Nombre):    Jareda Herrera, Alejandro         %%
 %%==================================================================%%
 
- Paso   Acción                       Notas
-====== ============================ ================================
+ Paso   Acción                      	 	Notas
+====== ============================ 		================================
 1	git clone URL
 2	notepad bitacora.txt		
 3	git add bitacora.txt
 3	git commit -m "Paso 3"
 3	git push
+
+5	git add bitacora.txt
+5	git commit -m "Paso 05"
+6	git branch develop
+7	git checkout -b feature/Ticket220
+
+9	git add bitacora.txt
+9	git commit -m "Paso 09"
+10	git checkout develop
+11	git checkout -b feature/Ticket221
+
+13	git checkout feature/Ticket220		Salta error, ya que hay cambios sin guardar y queremos saltar
+						a otra rama. Como solución, creo un stash (git stash), y a 
+						continuación reintento el git checkout.
+
+15	git add bitacora.txt
+15	git commit -m "Paso 15"
+16	git checkout feature/Ticket221
+
+18	git add bitacora.txt
+18	git commit -m "Paso 18"
+19	git checkout develop
+20	git branch feature/Ticket222
+21	git checkout feature/Ticket220
+22 						La fusión en este momento se haría de manera recursiva.
+
+23	git add bitacora.txt
+23	git commit -m "Paso 23"
+24	git checkout develop
+25	git merge --no-ff feature/Ticket220
+26	git merge --no-ff feature/Ticket221	Salta error, conflicto a la hora de realizar el merge en 
+						bitacora.txt; abro el archivo con un editor de texto, 
+						arreglo los conflictos que se indican, realizo un commit y 
+						puedo hacer merge de nuevo.
+
+28	git add bitacora.txt
+28	git commit -m "Paso 28"
+30	git push --set-upstream origin develop
+31	git checkout feature/Ticket222
+32	git merge develop
+
 
