@@ -46,5 +46,10 @@
 						arreglo los conflictos que se indican, realizo un commit y 
 						puedo hacer merge de nuevo.
 
+28	git add bitacora.txt
+28	git commit -m "Paso 28"
+30	git push --set-upstream origin develop
+31	git checkout feature/Ticket222
+32	git merge develop
 
 
